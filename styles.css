@@ -1,0 +1,339 @@
+@font-face{
+    font-family: 'Google Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #CFE5E8;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mapdiv{
+    width: 66%;
+    margin:20px 0;
+    background-color:aqua;
+}
+
+.marketdiv{
+    align-self: center;
+    text-align: left;
+    font-size: 2rem;
+    background-color: #e89bbd;
+    padding: 20px;
+}
+
+/*Italy*/
+.cls-italy{
+    fill:#0065b5;
+}
+
+.cls-italy:hover{
+    fill:rgb(0, 120, 16);
+    filter: drop-shadow( 0px 0px 3px rgba(0, 0, 0, .7));
+    z-index: 999;
+}
+
+/*France*/
+.cls-france{
+    fill:#0082ec;
+}
+
+.cls-france:hover{
+    fill:rgb(0, 120, 16);
+    filter: drop-shadow( 0px 0px 3px rgba(0, 0, 0, .7));
+    z-index: 999;
+}
+
+/*Sweden*/
+.cls-sweden{
+    fill:#0081e9;
+}
+
+.cls-sweden:hover{
+    fill:rgb(0, 120, 16);
+    filter: drop-shadow( 0px 0px 3px rgba(0, 0, 0, .7));
+    z-index: 999;
+}
+
+/*Finland*/
+.cls-finland{
+    fill:#16b6fe;
+}
+
+.cls-finland:hover{
+    fill:rgb(0, 120, 16);
+    filter: drop-shadow( 0px 0px 3px rgba(0, 0, 0, .7));
+    z-index: 999;
+}
+
+/*Denmark*/
+.cls-denmark{
+    fill:#96edff;
+}
+
+.cls-denmark:hover{
+    fill:rgb(0, 120, 16);
+    filter: drop-shadow( 0px 0px 3px rgba(0, 0, 0, .7));
+    z-index: 999;
+}
+
+/*Norway*/
+.cls-norway{
+    fill:#0066b6;
+}
+
+.cls-norway:hover{
+    fill:rgb(0, 120, 16);
+    filter: drop-shadow( 0px 0px 3px rgba(0, 0, 0, .7));
+    z-index: 999;
+}
+
+/*Germany*/
+.cls-germany{
+    fill:#15b5ff;
+}
+
+.cls-germany:hover{
+    fill:rgb(0, 120, 16);
+    filter: drop-shadow( 0px 0px 3px rgba(0, 0, 0, .7));
+    z-index: 999;
+}
+
+/*Spain*/
+.cls-spain{
+    fill:#0065b7;
+}
+
+.cls-spain:hover{
+    fill:rgb(0, 120, 16);
+    filter: drop-shadow( 0px 0px 3px rgba(0, 0, 0, .7));
+    z-index: 999;
+}
+
+/*Netherlands*/
+.cls-netherlands{
+    fill:#0067b7;
+}
+
+.cls-netherlands:hover{
+    fill:rgb(0, 120, 16);
+    filter: drop-shadow( 0px 0px 3px rgba(0, 0, 0, .7));
+    z-index: 999;
+}
+
+/*Portugal*/
+.cls-portugal{
+    fill:#14b5fd;
+}
+
+.cls-portugal:hover{
+    fill:rgb(0, 120, 16);
+    filter: drop-shadow( 0px 0px 3px rgba(0, 0, 0, .7));
+    z-index: 999;
+}
+
+a{
+	cursor:pointer;
+}
+
+
+
+.shadow {
+    filter: drop-shadow( 0px 0px 3px rgba(0, 0, 0, .7));
+    z-index: 999;
+}
+
+.shadow:hover{
+	
+	-webkit-transform: translateY(-15px);
+	-moz-transform: translateY(-15px);
+	-ms-transform: translateY(-15px);
+	-o-transform: translateY(-15px);
+	transform: translateY(-15px);
+}
+
+.cls-1 {
+    fill: #0166b6;
+  }
+
+  .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26, .cls-27, .cls-28, .cls-29, .cls-30, .cls-31, .cls-32, .cls-33, .cls-34, .cls-35, .cls-36, .cls-37, .cls-germany, .cls-portugal, .cls-italy, .cls-netherlands, .cls-denmark, .cls-spain, .cls-norway, .cls-finland, .cls-sweden, .cls-france {
+    stroke: gray;
+    stroke-miterlimit: 10;
+    stroke-width: .25px;
+  }
+
+  .cls-38 {
+    fill: #f9f9f9;
+  }
+
+  .cls-38, .cls-39 {
+    stroke-width: 0px;
+  }
+
+  .cls-2 {
+    fill: #0366b9;
+  }
+
+  .cls-3 {
+    fill: #0082ec;
+  }
+
+  .cls-4 {
+    fill: #8ec79a;
+  }
+
+  .cls-4, .cls-14, .cls-23, .cls-25, .cls-26, .cls-40 {
+    display: none;
+  }
+
+  .cls-5 {
+    fill: #0065b5;
+  }
+
+  .cls-6 {
+    fill: #1ab7ff;
+  }
+
+  .cls-7 {
+    fill: #97ebfe;
+  }
+
+  .cls-8 {
+    fill: #0081e9;
+  }
+
+  .cls-9 {
+    fill: #0281ea;
+  }
+
+  .cls-10 {
+    fill: #96ebff;
+  }
+
+  .cls-11 {
+    fill: #16b6fe;
+  }
+
+  .cls-12 {
+    fill: #0085e9;
+  }
+
+  .cls-13 {
+    fill: #89b8e4;
+  }
+
+  .cls-14 {
+    fill: #fbd165;
+  }
+
+  .cls-41 {
+    fill: #000;
+    font-family: Roboto-Regular, 'Roboto Regular';
+    font-size: 12px;
+  }
+
+  .cls-15 {
+    fill: #13b5fd;
+  }
+
+  .cls-16 {
+    fill: #96edff;
+  }
+
+  .cls-17 {
+    fill: #bace6b;
+  }
+
+  .cls-18 {
+    fill: #0066b6;
+  }
+
+  .cls-19 {
+    fill: #92e9fa;
+  }
+
+  .cls-20 {
+    fill: #15b5ff;
+  }
+
+  .cls-21 {
+    fill: #0465b6;
+  }
+
+  .cls-22 {
+    fill: #0065b7;
+  }
+
+  .cls-23, .cls-34 {
+    fill: #e89bbd;
+  }
+
+  .cls-24 {
+    fill: #14b6fe;
+  }
+
+  .cls-25 {
+    fill: #ac8fc7;
+  }
+
+  .cls-26 {
+    fill: #ffeb64;
+  }
+
+  .cls-27 {
+    fill: #0863b5;
+  }
+
+  .cls-28 {
+    fill: #b7f5ff;
+  }
+
+  .cls-29 {
+    fill: #95ecfd;
+  }
+
+  .cls-30 {
+    fill: #0067b7;
+  }
+
+  .cls-31 {
+    fill: #94ebfe;
+  }
+
+  .cls-32 {
+    fill: #15b6fe;
+  }
+
+  .cls-33 {
+    fill: #15b5fa;
+  }
+
+  .cls-35 {
+    fill: #0485e9;
+  }
+
+  .cls-36 {
+    fill: #99edff;
+  }
+
+  .cls-39 {
+    fill: #cfe5e8;
+  }
+
+  .cls-37 {
+    fill: #14b5fd;
+  }
